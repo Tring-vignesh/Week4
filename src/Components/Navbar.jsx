@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="container">
         <Link className="navbar-brand" to="/">Tringapps</Link>
         <div className="ml-auto">
-          {location.pathname !== "/dashboard" && location.pathname!=="/editpersona" ? (
+          {location.pathname !== "/dashboard" && !location.pathname.startsWith("/editpersona/") ? (
             <>
               <Link className="btn btn-primary mx-2" to="/signin">Sign In</Link>
               <Link className="btn btn-primary" to="/signup">Sign Up</Link>

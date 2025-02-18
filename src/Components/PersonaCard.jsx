@@ -20,9 +20,7 @@ const PersonaCard = ({ name, image, lastUpdated }) => {
         </div>
         <p className="card-text text-muted">Last updated: {lastUpdated}</p>
       </div>
-      <button className="btn btn-light position-absolute top-0 end-0 m-2">
-        <MoreVertical size={20} />
-      </button>
+     
     </div>
   );
 };
